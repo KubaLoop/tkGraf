@@ -8,8 +8,8 @@ x = list(map(float, x))
 y = list(map(float, y))
 
 newX = lab.linspace(0,3, 333)#stribrnych strikacek strikalo pres 333 stribrnych strech
-#spl = inp.CubicSpline(x,y)
-spl = inp.UnivariateSpline(x,y)
+spl = inp.CubicSpline(x,y)
+#spl = inp.UnivariateSpline(x,y)
 newY = spl(newX)
 
 lab.plot(x,y,"o", label = "Měřící body")
